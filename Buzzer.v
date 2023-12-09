@@ -74,6 +74,7 @@ always @(posedge clk) begin
         counter <= counter + 1;
     end else begin
         pwm = ~pwm;
+        counter <= 0;
     end
 end
 
